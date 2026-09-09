@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+}
+
+.cv {
+  width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  display: flex;
+}
+
+.left {
+  width: 30%;
+  background-color: #333333;
+  color: white;
+  padding: 25px;
+  min-height: 900px;
+}
+
+.left img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.left h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.left > p {
+  text-align: center;
+  color: #dddddd;
+}
+
+.left h2 {
+  font-size: 18px;
+  color: #f0c14b;
+  margin-top: 35px;
+}
+
+.left p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.left hr {
+  border: 0;
+  border-top: 1px solid #777777;
+  margin-top: 25px;
+}
+
+/* PRAWA STRONA */
+
+.right {
+  width: 70%;
+  padding: 40px;
+}
+
+.right h2 {
+  color: #333333;
+  border-bottom: 2px solid #f0c14b;
+  padding-bottom: 8px;
+  margin-top: 25px;
+}
+
+.right h2:first-child {
+  margin-top: 0;
+}
+
+.right p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+.right ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .cv {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cv {
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    min-height: auto;
+  }
+}
